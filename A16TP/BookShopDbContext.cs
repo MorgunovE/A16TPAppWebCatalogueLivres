@@ -10,16 +10,21 @@ namespace A16TP
         {
         }
 
-        public DbSet<User> Users { get; set; }
-        public DbSet<Book> Books { get; set; }
-        public DbSet<Basket> Baskets { get; set; }
-        public DbSet<BasketBook> BasketBooks { get; set; }
+        public DbSet<User> Users { get; set; } = default!;
+        public DbSet<Book> Books { get; set; } = default!;
+        public DbSet<Basket> Baskets { get; set; } = default!;
+        public DbSet<BasketBook> BasketBooks { get; set; } = default!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            // Configure many-to-many relationship between Basket and Book
+            // Table name configurations - map to existing tables
+            modelBuilder.Entity<User>().ToTable("User");
+            modelBuilder.Entity<Book>().ToTable("Livre");
+            modelBuilder.Entity<Basket>().ToTable("Basket");
+            modelBuilder.Entity<BasketBook>().ToTable("Basket_Livre");
+
             modelBuilder.Entity<BasketBook>()
                 .HasKey(bb => new { bb.BasketId, bb.BookId });
 
@@ -33,7 +38,6 @@ namespace A16TP
                 .WithMany(b => b.BasketBooks)
                 .HasForeignKey(bb => bb.BookId);
 
-            // Seed initial data will be added later
         }
     }
 }
