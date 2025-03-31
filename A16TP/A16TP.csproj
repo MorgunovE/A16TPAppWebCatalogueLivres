@@ -6,4 +6,56 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\images\biography_cover.jpeg" />
+    <Content Remove="wwwroot\images\book_catalog.jpg" />
+    <Content Remove="wwwroot\images\book_icon.svg" />
+    <Content Remove="wwwroot\images\book_logo.png" />
+    <Content Remove="wwwroot\images\book_main_screen.jpg" />
+    <Content Remove="wwwroot\images\book_map.jpg" />
+    <Content Remove="wwwroot\images\catalog.jpg" />
+    <Content Remove="wwwroot\images\checkout.jpg" />
+    <Content Remove="wwwroot\images\clock.svg" />
+    <Content Remove="wwwroot\images\detective_cover.jpeg" />
+    <Content Remove="wwwroot\images\email.svg" />
+    <Content Remove="wwwroot\images\fiction_cover.jpeg" />
+    <Content Remove="wwwroot\images\filter.jpg" />
+    <Content Remove="wwwroot\images\livre\1984.jpg" />
+    <Content Remove="wwwroot\images\livre\great_gatsby.jpg" />
+    <Content Remove="wwwroot\images\livre\to_kill_a_mockingbird.jpg" />
+    <Content Remove="wwwroot\images\location-sign.svg" />
+    <Content Remove="wwwroot\images\phone-circle-fill.svg" />
+    <Content Remove="wwwroot\images\time-clock-icon.svg" />
+    <Content Remove="wwwroot\images\user_account.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\biography_cover.jpeg" />
+    <None Include="wwwroot\images\book_catalog.jpg" />
+    <None Include="wwwroot\images\book_icon.svg" />
+    <None Include="wwwroot\images\book_logo.png" />
+    <None Include="wwwroot\images\book_main_screen.jpg" />
+    <None Include="wwwroot\images\book_map.jpg" />
+    <None Include="wwwroot\images\catalog.jpg" />
+    <None Include="wwwroot\images\checkout.jpg" />
+    <None Include="wwwroot\images\clock.svg" />
+    <None Include="wwwroot\images\detective_cover.jpeg" />
+    <None Include="wwwroot\images\email.svg" />
+    <None Include="wwwroot\images\fiction_cover.jpeg" />
+    <None Include="wwwroot\images\filter.jpg" />
+    <None Include="wwwroot\images\livre\1984.jpg" />
+    <None Include="wwwroot\images\livre\great_gatsby.jpg" />
+    <None Include="wwwroot\images\livre\to_kill_a_mockingbird.jpg" />
+    <None Include="wwwroot\images\location-sign.svg" />
+    <None Include="wwwroot\images\phone-circle-fill.svg" />
+    <None Include="wwwroot\images\time-clock-icon.svg" />
+    <None Include="wwwroot\images\user_account.jpg" />
+  </ItemGroup>
+
+<ItemGroup>
+	<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0" />
+</ItemGroup>
+
 </Project>
