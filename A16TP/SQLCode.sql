@@ -1,3 +1,12 @@
+-- Create database
+IF NOT EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = 'dbbookshop')
+BEGIN
+    CREATE DATABASE dbbookshop;
+END
+GO
+
+USE dbbookshop;
+GO
 
 -- Drop tables if they exist
 IF OBJECT_ID('dbo.Basket_Livre', 'U') IS NOT NULL
