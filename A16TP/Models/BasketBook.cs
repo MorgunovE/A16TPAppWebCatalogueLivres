@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace A16TP.Models
 {
@@ -6,9 +7,11 @@ namespace A16TP.Models
     public class BasketBook
     {
         [Column("basket_id")]
+        [Display(Name = "Basket")]
         public long BasketId { get; set; }
 
         [Column("livre_id")]
+        [Display(Name = "Book")]
         public long BookId { get; set; }
 
         [ForeignKey("BasketId")]

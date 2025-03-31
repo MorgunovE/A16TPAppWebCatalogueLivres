@@ -10,6 +10,7 @@ namespace A16TP.Models
         public long Id { get; set; }
 
         [Column("user_id")]
+        [Display(Name = "User")]
         public long UserId { get; set; }
 
         [ForeignKey("UserId")]
